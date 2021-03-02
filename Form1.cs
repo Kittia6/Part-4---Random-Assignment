@@ -12,6 +12,7 @@ namespace Part_4___Random_Assignment
 {
     public partial class RandomNumbers : Form
     {
+        Random generator = new Random();
         public RandomNumbers()
         {
             InitializeComponent();
