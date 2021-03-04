@@ -25,15 +25,16 @@ namespace Part_4___Random_Assignment
         {
             maxInt = Convert.ToInt32(txtMax.Text);
             minInt = Convert.ToInt32(txtMin.Text);
-            generator.Next(minInt, maxInt);
             
+            lblResult.Text = Convert.ToString(generator.Next(minInt, maxInt));
         }
 
         private void btnDouble_Click(object sender, EventArgs e)
         {
             maxInt = Convert.ToInt32(txtMax.Text);
             minInt = Convert.ToInt32(txtMin.Text);
-           Convert.ToDouble(generator.Next(minInt, maxInt));
+            lblResult.Text = Convert.ToString(generator.Next(minInt, maxInt) + generator.NextDouble());
+            
         }
     }
 }
